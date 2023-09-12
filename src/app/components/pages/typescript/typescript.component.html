@@ -1,0 +1,12 @@
+<h1>Bindings</h1>
+<h2>Variable Binding</h2>
+<p>{{ cadena }}</p>
+<h2>Event Binding</h2>
+<button (click)="onButtonClick($event)">Click</button>
+<h2>Input Binding</h2>
+<app-input [cadena]="cadena"></app-input>
+<h2>2 Way Binding</h2>
+<div class="form-group">
+  <label for="nombre">Nombre</label>
+  <input type="text" [(ngModel)]="cadena" />
+</div>

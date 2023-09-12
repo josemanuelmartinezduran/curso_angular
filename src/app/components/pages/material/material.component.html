@@ -2,8 +2,14 @@
   <div class="jumbotron">
     <h1 class="display-4">Prueba de Material</h1>
     <p class="lead">Dialogo</p>
+    <p>{{ nuevoValor }}</p>
     <hr class="my-4" />
     <p>
+      {{ bulbasaurService.nombre }}
+      <a href="/promises">Ir a Promises</a>
+      <br>
+      <button mat-raised-button (click)="updateService()"><mat-icon>check</mat-icon>Actualizar</button>
+      <br>
       <button mat-stroked-button color="accent" (click)="openDialog()">
         <mat-icon>balcony</mat-icon> Click aqui
       </button>

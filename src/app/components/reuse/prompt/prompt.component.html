@@ -1,0 +1,13 @@
+<h1 matDialogTitle>{{ titulo }}</h1>
+<mat-dialog-content>
+  <h3>{{ mensaje }}</h3>
+  <mat-form-field appearance="fill" class="d-block w-100">
+  <mat-label>{{ mensaje }}</mat-label>
+  <input matInput required type="text" [(ngModel)]="valor">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button>Aceptar</button>
+  <button mat-button [mat-dialog-close]="valor" >Cancelar</button>
+
+</mat-dialog-actions>

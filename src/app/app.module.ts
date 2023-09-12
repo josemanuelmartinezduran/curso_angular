@@ -9,6 +9,10 @@ import { MaterialModule } from './modules/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponent } from './components/pages/material/material.component';
 import { TestComponent } from './components/dialogs/test/test.component';
+import { PromisesComponent } from './components/pages/promises/promises.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AlertComponent } from './components/reuse/alert/alert.component';
+import { PromptComponent } from './components/reuse/prompt/prompt.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,10 @@ import { TestComponent } from './components/dialogs/test/test.component';
     TypescriptComponent,
     InputComponent,
     MaterialComponent,
-    TestComponent
+    TestComponent,
+    PromisesComponent,
+    AlertComponent,
+    PromptComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +31,7 @@ import { TestComponent } from './components/dialogs/test/test.component';
     FormsModule,
     MaterialModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { TestComponent } from '../../dialogs/test/test.component';
+import { BulbasaurService } from 'src/app/services/bulbasaur.service';
+import { AlertComponent } from '../../reuse/alert/alert.component';
+import { PromptComponent } from '../../reuse/prompt/prompt.component';
 
 @Component({
   selector: 'app-material',
@@ -9,9 +12,33 @@ import { TestComponent } from '../../dialogs/test/test.component';
 })
 export class MaterialComponent {
 
-  constructor(private dialogRef:MatDialog){}
+  nuevoValor:string = "";
+
+  constructor(private dialogRef:MatDialog, public bulbasaurService:BulbasaurService){}
 
   openDialog(){
-    this.dialogRef.open(TestComponent);
+    /* this.dialogRef.open(AlertComponent, {
+      data: {
+        titulo: "Peligro",
+        mensaje: "Los datos que no ha guardado se perderán"
+      }
+    }); */
+    const dialogRef = this.dialogRef.open(PromptComponent, {
+      data: {
+        titulo: "Pregunta",
+        mensaje: "Escriba su nombre"
+      }
+    })
+
+    dialogRef.afterClosed().subscribe(
+      (resutl:any) => {
+        console.log("Se cerró el dialogo");
+        this.nuevoValor= resutl.toString();
+      }
+    );
+  }
+
+  updateService(){
+    this.bulbasaurService.nombre = this.nuevoValor;
   }
 }

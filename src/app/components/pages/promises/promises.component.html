@@ -1,0 +1,8 @@
+<mat-spinner class="center" *ngIf="!dataLoaded"></mat-spinner>
+<div class="container" *ngIf="dataLoaded">
+  <div class="jumbotron">
+    <h1 class="display-4">El pokemon es</h1>
+    <p class="lead">{{ nombrePokemon }}</p>
+    <hr class="my-4">
+  </div>
+</div>

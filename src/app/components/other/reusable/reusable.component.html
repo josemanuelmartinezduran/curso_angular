@@ -1,0 +1,10 @@
+<div [ngClass]="color+' container'">
+    <button mat-raised-button (click)="generaEvento()"><mat-icon>add</mat-icon>Genera evento</button>
+  <h3>Dentro de reusable</h3>
+<ul>
+  <li *ngFor="let item of lista">
+    {{ item }}
+  </li>
+</ul>
+<button mat-raised-button (click)="avisa()"><mat-icon>check</mat-icon>Notificar al hermano</button>
+</div>

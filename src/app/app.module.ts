@@ -13,6 +13,9 @@ import { PromisesComponent } from './components/pages/promises/promises.componen
 import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './components/reuse/alert/alert.component';
 import { PromptComponent } from './components/reuse/prompt/prompt.component';
+import { RxjsComponent } from './components/pages/rxjs/rxjs.component';
+import { InputsComponent } from './components/pages/inputs/inputs.component';
+import { ReusableComponent } from './components/other/reusable/reusable.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { PromptComponent } from './components/reuse/prompt/prompt.component';
     TestComponent,
     PromisesComponent,
     AlertComponent,
-    PromptComponent
+    PromptComponent,
+    RxjsComponent,
+    InputsComponent,
+    ReusableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<div class="container" [style.backgroundColor]="elemento">
+  <div class="jumbotron">
+    <h1 class="display-4" [style.fontSize]="elemento">Ejemplo de inputs</h1>
+    <p class="lead">RXJS</p>
+    {{ click }}
+    <input [type]="'text'"  [(ngModel)]="elemento">
+    <button mat-raised-button (click)="addToList()"><mat-icon>add</mat-icon>Agregar a la lista</button>
+    <app-reusable [lista]="lista" (notifica)="getNotificacion($event)" (onAvisa)="getAviso($event)" [sub$]="sub$"></app-reusable>
+    <app-reusable [lista]="segundaLista"  [sub$]="sub$"></app-reusable>
+  </div>
+  <span [ngClass]="getClase()">Hola mundo</span>
+</div>

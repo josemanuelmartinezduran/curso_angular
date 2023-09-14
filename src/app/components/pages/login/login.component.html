@@ -1,0 +1,21 @@
+<main class="form-signin w-100 m-auto">
+  <form>
+    <img class="mb-4" src="../assets/img/logo.png" alt="" height="165px">
+    <h1 class="h3 mb-3 fw-normal">Sistema de soporte</h1>
+
+    <div class="form-floating">
+      <input type="text" [(ngModel)]="loginForm.username" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Nombre de usuario</label>
+      <p class="text-danger">{{ loginForm.errorUsername }}</p>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="password" [(ngModel)]="loginForm.password" name="passwd" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Contraseña</label>
+      <p class="text-danger">{{ loginForm.errorPassword }}</p>
+    </div>
+
+    <button class="btn btn-success w-100 py-2 mt-4" type="submit" (click)="auth()">Iniciar sesión</button>
+    <button class="btn btn-primary w-100 py-2 mt-4" type="submit" (click)="limpia()">Limpiar</button>
+    <p class="mt-1 mb-3 text-body-secondary">&copy; 2017–2023</p>
+  </form>
+</main>

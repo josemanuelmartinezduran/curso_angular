@@ -16,6 +16,10 @@ import { PromptComponent } from './components/reuse/prompt/prompt.component';
 import { RxjsComponent } from './components/pages/rxjs/rxjs.component';
 import { InputsComponent } from './components/pages/inputs/inputs.component';
 import { ReusableComponent } from './components/other/reusable/reusable.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.component';
+import { WelcomeComponent } from './components/pages/welcome/welcome.component';
+import { LogoutComponent } from './components/pages/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ReusableComponent } from './components/other/reusable/reusable.componen
     PromptComponent,
     RxjsComponent,
     InputsComponent,
-    ReusableComponent
+    ReusableComponent,
+    LoginComponent,
+    BootsrapComponent,
+    WelcomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

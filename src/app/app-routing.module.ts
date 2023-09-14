@@ -5,6 +5,10 @@ import { MaterialComponent } from './components/pages/material/material.componen
 import { PromisesComponent } from './components/pages/promises/promises.component';
 import { RxjsComponent } from './components/pages/rxjs/rxjs.component';
 import { InputsComponent } from './components/pages/inputs/inputs.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.component';
+import { WelcomeComponent } from './components/pages/welcome/welcome.component';
+import { LogoutComponent } from './components/pages/logout/logout.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -12,6 +16,10 @@ const routes: Routes = [
   { path: 'promises', component: PromisesComponent },
   { path: 'rxjs', component: RxjsComponent },
   { path: 'inputs', component: InputsComponent },
+  { path: 'bootstrap', component: BootsrapComponent },
+  { path: '', component: LoginComponent },
+  { path: 'welcome', component: WelcomeComponent },
+  { path: 'logout', component: LogoutComponent },
 ];
 
 @NgModule({

@@ -19,7 +19,7 @@ export class LoginComponent {
       alert("Corrija los errores");
       return;
     } if(this.sessionService.auth(this.loginForm.username, this.loginForm.password)){
-      this.router.navigate(["/welcome"])
+      this.router.navigate(["/d/welcome"])
     } else{
       alert("Error al iniciar sesion");
     }

@@ -1,0 +1,26 @@
+.container{
+}
+
+.flex-main{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.flex-col{
+  width: 20em;
+}
+
+.flex-col > .title{
+  text-align: center;
+  background-color: wheat;
+  font-size: large;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.task{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

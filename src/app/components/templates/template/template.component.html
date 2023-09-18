@@ -21,6 +21,11 @@
       <li class="nav-item d-none d-sm-inline-block" *ngFor="let menuItem of mainMenu">
         <a [href]="menuItem.link" class="nav-link">{{ menuItem.tag }}</a>
       </li>
+      <li>
+        <a href="/logout" class="nav-link">
+          <mat-icon class="mat-18 menuIcon">close</mat-icon>Cerrar Sesión
+        </a>
+      </li>
     </ul>
   </nav>
   <!-- End of Navbar -->
@@ -36,8 +41,8 @@
       <!-- Usuario -->
       <div class="user-panel my-0 pb-3 d-flex">
         <div class="info">
-          <p class="text-light fs-4 my-1">Alexander Pierce</p>
-          <p class="text-light fs-5 my-0">Puesto</p>
+          <p class="text-light fs-4 my-1">{{ sessionService.name }}</p>
+          <p class="text-light fs-5 my-0">{{ sessionService.rolId }}</p>
         </div>
       </div>
 
@@ -55,6 +60,7 @@
               </p>
             </a>
           </li>
+
         </ng-container>
         </ul>
       </nav>
@@ -65,7 +71,7 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-
+    <router-outlet></router-outlet>
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

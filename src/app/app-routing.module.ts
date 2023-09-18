@@ -10,6 +10,7 @@ import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.componen
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
 import { TemplateComponent } from './components/templates/template/template.component';
+import { TableroComponent } from './components/pages/tablero/tablero.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -21,7 +22,11 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'd', component: TemplateComponent },
+  { path: 'tablero', component: TableroComponent },
+  { path: 'd', component: TemplateComponent, children: [
+    { path: 'welcome', component: WelcomeComponent },
+    { path: 'tablero', component: TableroComponent },
+  ]},
 ];
 
 @NgModule({

@@ -21,6 +21,7 @@ import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.componen
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
 import { TemplateComponent } from './components/templates/template/template.component';
+import { TableroComponent } from './components/pages/tablero/tablero.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { TemplateComponent } from './components/templates/template/template.comp
     BootsrapComponent,
     WelcomeComponent,
     LogoutComponent,
-    TemplateComponent
+    TemplateComponent,
+    TableroComponent
   ],
   imports: [
     BrowserModule,

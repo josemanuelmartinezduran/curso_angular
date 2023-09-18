@@ -18,19 +18,24 @@
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <ul class="navbar-nav">
       <!-- Menu superior -->
+      <li class="nav-item d-none d-sm-inline-block" >
+        <button mat-icon-button color="primary" (click)="togleExpand()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </li>
       <li class="nav-item d-none d-sm-inline-block" *ngFor="let menuItem of mainMenu">
         <a [href]="menuItem.link" class="nav-link">{{ menuItem.tag }}</a>
       </li>
       <li>
-        <a href="/logout" class="nav-link">
-          <mat-icon class="mat-18 menuIcon">close</mat-icon>Cerrar Sesión
-        </a>
+        <button mat-stroked-button color="primary" (click)="cerrarSesion()">
+          <mat-icon>close</mat-icon> Cerrar Sesión
+        </button>
       </li>
     </ul>
   </nav>
   <!-- End of Navbar -->
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" [ngClass]="sideBarClass">
     <!-- Logo -->
     <a href="index3.html" class="brand-link" >
       <img src="../assets/img/logo.png" alt="" class="" style="width: 230px;">
@@ -70,7 +75,7 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" [ngClass]="contentClass">
     <router-outlet></router-outlet>
   </div>
   <!-- /.content-wrapper -->

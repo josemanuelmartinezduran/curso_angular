@@ -4,6 +4,14 @@
   left: -5px;
 }
 
+.main-sidebar-contracted{
+  display: none;
+}
+
+.content-wrapper-expanded{
+  margin-left: 0px !important;
+}
+
 /*!
  *   AdminLTE v3.2.0
  *   Author: Colorlib

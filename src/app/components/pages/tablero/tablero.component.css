@@ -3,24 +3,28 @@
 
 .flex-main{
   display: flex;
-  flex-wrap: wrap;
-  background-color: white;
+  background-color: #f4f6f9;
 }
 
 .flex-col{
   width: 20em;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  box-shadow: 3px 1px 1px rgb(102, 102, 102);
 }
 
 .flex-col > .title{
   text-align: center;
-  background-color: wheat;
+  border-radius: 3px;
   font-size: large;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  vertical-align: middle;
+  height: 2em;
+  color: #f4f6f9;
 }
 
 .task{
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 1em;
+  border: 1px solid black;
 }

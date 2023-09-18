@@ -1,9 +1,9 @@
 <div class="container mt-3">
 <div class="flex-main">
   <div class="flex-col">
-    <div class="title">Nuevo</div>
+    <div class="title bg-secondary">Nuevo</div>
     <mat-card class="task">
-      <mat-card-header>
+      <mat-card-header cdkDrag>
         Nombre de la petición
       </mat-card-header>
       <mat-card-content>  Detalles</mat-card-content>
@@ -12,7 +12,7 @@
       </mat-card-footer>
     </mat-card>
 
-    <mat-card class="task">
+    <mat-card class="task" cdkDrag>
       <mat-card-header>
         Nombre de la petición
       </mat-card-header>
@@ -22,14 +22,14 @@
       </mat-card-footer>
     </mat-card>
   </div>
-  <div class="flex-col">
-    <div class="title">Asignado</div>
+  <div class="flex-col ">
+    <div class="title bg-primary">Asignado</div>
+  </div>
+  <div class="flex-col ">
+    <div class="title bg-info">En proceso</div>
   </div>
   <div class="flex-col">
-    <div class="title">En proceso</div>
-  </div>
-  <div class="flex-col">
-    <div class="title">Terminado</div>
+    <div class="title bg-success">Terminado</div>
   </div>
 </div>
 </div>

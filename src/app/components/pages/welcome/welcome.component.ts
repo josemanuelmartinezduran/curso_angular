@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SessionService } from 'src/app/services/session.service';
 
@@ -23,5 +23,12 @@ export class WelcomeComponent implements OnInit{
 
   closeSession(){
     this.router.navigate(["/logout"])
+  }
+
+  chekSomething(){
+    this.sessionService.rolId;
+    if(window.sessionStorage.getItem("rolId")=="usuario"){ //Peligroso
+      console.log("haz algo peligroso");
+    }
   }
 }

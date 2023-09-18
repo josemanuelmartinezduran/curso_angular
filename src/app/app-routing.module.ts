@@ -9,6 +9,7 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.component';
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
+import { TemplateComponent } from './components/templates/template/template.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: 'logout', component: LogoutComponent },
+  { path: 'd', component: TemplateComponent },
 ];
 
 @NgModule({

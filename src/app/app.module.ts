@@ -20,6 +20,7 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { BootsrapComponent } from './components/pages/bootsrap/bootsrap.component';
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
+import { TemplateComponent } from './components/templates/template/template.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { LogoutComponent } from './components/pages/logout/logout.component';
     LoginComponent,
     BootsrapComponent,
     WelcomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,

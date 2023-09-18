@@ -8,7 +8,9 @@ import { SessionService } from 'src/app/services/session.service';
   styleUrls: ['./logout.component.css']
 })
 export class LogoutComponent implements OnInit{
+
   constructor(private sessionService:SessionService, private router:Router){}
+
   ngOnInit(): void {
     this.sessionService.destroySession();
     setTimeout(()=>{

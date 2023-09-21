@@ -13,8 +13,8 @@ import { Router } from '@angular/router';
 export class TemplateComponent implements OnInit{
   mainMenu:MenuItem[] = Array();
   sidebarMenu:SidebarMenuItem[] = Array();
-  sideBarClass = "";
-  contentClass = "";
+  sideBarClass = "main-sidebar-contracted";
+  contentClass = "content-wrapper-expanded";
 
   constructor(private menuService:MenuService, public sessionService:SessionService, private router:Router){}
 

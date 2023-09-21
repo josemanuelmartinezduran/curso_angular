@@ -1,0 +1,23 @@
+<h1 matDialogTitle>Agregar Productos</h1>
+<mat-dialog-content>
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Descripción</mat-label>
+    <input matInput type="text" [(ngModel)]="descripcion"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Colores</mat-label>
+    <input matInput required type="text" [(ngModel)]="colores" />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Clave</mat-label>
+    <input matInput required type="text" [(ngModel)]="clave"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Precio</mat-label>
+    <input matInput required type="number" [(ngModel)]="precio"/>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="onAddProduct()">Agregar</button>
+  <button mat-button color="accent" matDialogClose>Cerrar</button>
+</mat-dialog-actions>

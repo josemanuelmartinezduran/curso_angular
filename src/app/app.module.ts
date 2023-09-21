@@ -22,6 +22,10 @@ import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
 import { TemplateComponent } from './components/templates/template/template.component';
 import { TableroComponent } from './components/pages/tablero/tablero.component';
+import { NgChartsModule } from 'ng2-charts';
+import { PipesComponent } from './components/pages/pipes/pipes.component';
+import { ColorPipe } from './pipes/color.pipe';
+import { AddProductComponent } from './components/dialogs/add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,10 @@ import { TableroComponent } from './components/pages/tablero/tablero.component';
     WelcomeComponent,
     LogoutComponent,
     TemplateComponent,
-    TableroComponent
+    TableroComponent,
+    PipesComponent,
+    ColorPipe,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +56,8 @@ import { TableroComponent } from './components/pages/tablero/tablero.component';
     FormsModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

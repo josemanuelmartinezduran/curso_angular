@@ -11,6 +11,7 @@ import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LogoutComponent } from './components/pages/logout/logout.component';
 import { TemplateComponent } from './components/templates/template/template.component';
 import { TableroComponent } from './components/pages/tablero/tablero.component';
+import { PipesComponent } from './components/pages/pipes/pipes.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'd', component: TemplateComponent, children: [
     { path: 'welcome', component: WelcomeComponent },
     { path: 'tablero', component: TableroComponent },
+    { path: 'pipes', component: PipesComponent },
   ]},
 ];
 

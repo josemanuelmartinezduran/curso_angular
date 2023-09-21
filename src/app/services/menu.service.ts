@@ -13,7 +13,7 @@ export class MenuService {
     return [
       new MenuItem("Home", "/d/dashboard"),
       new MenuItem("Tablero", "/d/tablero"),
-      new MenuItem("Tercero", "/d/prueba"),
+      new MenuItem("Pipes", "/d/pipes"),
     ]
   }
 

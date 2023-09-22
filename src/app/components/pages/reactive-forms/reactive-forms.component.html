@@ -1,0 +1,21 @@
+<div class="container">
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Hola</mat-label>
+    <input matInput required type="text" [(ngModel)]="nombre" />
+  </mat-form-field>
+
+  <hr />
+
+  <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
+    <mat-form-field appearance="fill" class="d-block w-100">
+      <mat-label>Nombre</mat-label>
+      <input matInput id="name" type="text"  />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="d-block w-100">
+      <mat-label>Edad</mat-label>
+      <input matInput id="age" type="text"  />
+    </mat-form-field>
+    <button type="submit">Ejemplo</button>
+  </form>
+
+</div>

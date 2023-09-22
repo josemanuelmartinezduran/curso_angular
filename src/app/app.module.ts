@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TypescriptComponent } from './components/pages/typescript/typescript.component';
 import { InputComponent } from './components/other/input/input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponent } from './components/pages/material/material.component';
@@ -26,6 +26,10 @@ import { NgChartsModule } from 'ng2-charts';
 import { PipesComponent } from './components/pages/pipes/pipes.component';
 import { ColorPipe } from './pipes/color.pipe';
 import { AddProductComponent } from './components/dialogs/add-product/add-product.component';
+import { AnimationComponent } from './components/pages/animation/animation.component';
+import { OtherMaterialComponentsComponent } from './components/pages/other-material-components/other-material-components.component';
+import { ReactiveFormsComponent } from './components/pages/reactive-forms/reactive-forms.component';
+
 
 @NgModule({
   declarations: [
@@ -48,12 +52,16 @@ import { AddProductComponent } from './components/dialogs/add-product/add-produc
     TableroComponent,
     PipesComponent,
     ColorPipe,
-    AddProductComponent
+    AddProductComponent,
+    AnimationComponent,
+    OtherMaterialComponentsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,

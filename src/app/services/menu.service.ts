@@ -11,9 +11,11 @@ export class MenuService {
 
   getMainMenu():MenuItem[]{
     return [
-      new MenuItem("Home", "/d/dashboard"),
+      new MenuItem("Reactive", "/d/reactive"),
       new MenuItem("Tablero", "/d/tablero"),
       new MenuItem("Pipes", "/d/pipes"),
+      new MenuItem("Animaciones", "/d/animation"),
+      new MenuItem("Componentes", "/d/othermaterial")
     ]
   }
 

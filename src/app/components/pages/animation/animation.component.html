@@ -1,0 +1,17 @@
+<div class="container">
+  <div [@openClose]="isOpen ? true : false" class="open-close-container">
+    Contenido
+  </div>
+
+  <button mat-raised-button color="primary" (click)="toggleAnimation()">Animacion</button>
+
+  <div @myInsertRemoveTrigger *ngIf="isShown" class="insert-remove-container">
+    <p>The box is inserted</p>
+  </div>
+
+  <button mat-raised-button (blur)="hideDiv()" (focus)="showDiv()"><mat-icon>check</mat-icon>Que hago?</button>
+
+  <mat-spinner *ngIf="isOpen"></mat-spinner>
+
+  <mat-progress-bar mode="indeterminate" [@openClose]="isOpen ? true : false"></mat-progress-bar>
+</div>

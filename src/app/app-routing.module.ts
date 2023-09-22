@@ -12,6 +12,9 @@ import { LogoutComponent } from './components/pages/logout/logout.component';
 import { TemplateComponent } from './components/templates/template/template.component';
 import { TableroComponent } from './components/pages/tablero/tablero.component';
 import { PipesComponent } from './components/pages/pipes/pipes.component';
+import { AnimationComponent } from './components/pages/animation/animation.component';
+import { OtherMaterialComponentsComponent } from './components/pages/other-material-components/other-material-components.component';
+import { ReactiveFormsComponent } from './components/pages/reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -28,6 +31,9 @@ const routes: Routes = [
     { path: 'welcome', component: WelcomeComponent },
     { path: 'tablero', component: TableroComponent },
     { path: 'pipes', component: PipesComponent },
+    { path: 'animation', component: AnimationComponent },
+    { path: 'othermaterial', component: OtherMaterialComponentsComponent },
+    { path: 'reactive', component: ReactiveFormsComponent },
   ]},
 ];
 

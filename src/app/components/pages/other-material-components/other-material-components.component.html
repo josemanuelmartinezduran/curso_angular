@@ -1,0 +1,47 @@
+<div class="container">
+  <mat-form-field appearance="fill" class="d-block w-100">
+    <mat-label>Nombre</mat-label>
+    <input matInput required type="text" />
+  </mat-form-field>
+  <button mat-raised-button (click)="openSnackBar()">
+    <mat-icon>open</mat-icon>Abre snackbar
+  </button>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Mi panel</mat-panel-title>
+      <mat-panel-description>Descripcion del panel</mat-panel-description>
+    </mat-expansion-panel-header>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aspernatur
+    esse soluta officia incidunt placeat. Hic blanditiis mollitia inventore
+    dicta laudantium et laboriosam distinctio possimus delectus magnam, ut
+    expedita dignissimos?
+    <mat-action-row>
+      <button mat-raised-button color="primary">
+        <mat-icon>check</mat-icon>Guardar
+      </button>
+    </mat-action-row>
+  </mat-expansion-panel>
+  <mat-stepper formArrayName="formArray" linear>
+    <mat-step formGroupName="0" >
+      ...
+      <div>
+        <button mat-button matStepperNext type="button">Next</button>
+      </div>
+    </mat-step>
+    <mat-step formGroupName="1" >
+      ...
+      <div>
+        <button mat-button matStepperPrevious type="button">Back</button>
+        <button mat-button matStepperNext type="button">Next</button>
+      </div>
+    </mat-step>
+    ...
+  </mat-stepper>
+
+  <mat-tab-group>
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+
+</div>

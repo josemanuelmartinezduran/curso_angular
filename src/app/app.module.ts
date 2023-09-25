@@ -29,6 +29,7 @@ import { AddProductComponent } from './components/dialogs/add-product/add-produc
 import { AnimationComponent } from './components/pages/animation/animation.component';
 import { OtherMaterialComponentsComponent } from './components/pages/other-material-components/other-material-components.component';
 import { ReactiveFormsComponent } from './components/pages/reactive-forms/reactive-forms.component';
+import { PrimosComponent } from './components/pages/primos/primos.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { ReactiveFormsComponent } from './components/pages/reactive-forms/reacti
     AddProductComponent,
     AnimationComponent,
     OtherMaterialComponentsComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    PrimosComponent
   ],
   imports: [
     BrowserModule,

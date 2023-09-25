@@ -15,8 +15,8 @@ describe('PrimosComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('Debería crear el componenete', () => {
+    expect(component).toBeDefined();
   });
 
   it('debería calcular los números primos en el rango [1-10]', () => {

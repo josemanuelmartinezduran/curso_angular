@@ -15,6 +15,8 @@ import { PipesComponent } from './components/pages/pipes/pipes.component';
 import { AnimationComponent } from './components/pages/animation/animation.component';
 import { OtherMaterialComponentsComponent } from './components/pages/other-material-components/other-material-components.component';
 import { ReactiveFormsComponent } from './components/pages/reactive-forms/reactive-forms.component';
+import { SwitchComponent } from './components/pages/switch/switch.component';
+import { WstestComponent } from './components/pages/wstest/wstest.component';
 
 const routes: Routes = [
   { path: 'typescript', component: TypescriptComponent },
@@ -34,6 +36,8 @@ const routes: Routes = [
     { path: 'animation', component: AnimationComponent },
     { path: 'othermaterial', component: OtherMaterialComponentsComponent },
     { path: 'reactive', component: ReactiveFormsComponent },
+    { path: 'switch', component: SwitchComponent },
+    { path: 'wstest', component: WstestComponent },
   ]},
 ];
 

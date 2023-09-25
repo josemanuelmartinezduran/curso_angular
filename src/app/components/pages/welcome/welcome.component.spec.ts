@@ -15,7 +15,7 @@ describe('WelcomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('Debería crear el componente', () => {
+    expect(component).toBeDefined();
   });
 });

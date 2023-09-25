@@ -30,6 +30,8 @@ import { AnimationComponent } from './components/pages/animation/animation.compo
 import { OtherMaterialComponentsComponent } from './components/pages/other-material-components/other-material-components.component';
 import { ReactiveFormsComponent } from './components/pages/reactive-forms/reactive-forms.component';
 import { PrimosComponent } from './components/pages/primos/primos.component';
+import { SwitchComponent } from './components/pages/switch/switch.component';
+import { WstestComponent } from './components/pages/wstest/wstest.component';
 
 
 @NgModule({
@@ -57,7 +59,9 @@ import { PrimosComponent } from './components/pages/primos/primos.component';
     AnimationComponent,
     OtherMaterialComponentsComponent,
     ReactiveFormsComponent,
-    PrimosComponent
+    PrimosComponent,
+    SwitchComponent,
+    WstestComponent
   ],
   imports: [
     BrowserModule,

@@ -21,8 +21,8 @@ export class MenuService {
 
   getSidebar(){
     return [
-      new SidebarMenuItem("Principal", [
-        new MenuItem("Submenu1", "d/ejemplo", "cancel"),
+      new SidebarMenuItem("Testing", [
+        new MenuItem("Web service", "d/swtest", "cancel"),
         new MenuItem("Submenu2", "d/ejemplo", "edit"),
       ]),
       new SidebarMenuItem("Principal Dos", [

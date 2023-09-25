@@ -1,20 +1,26 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-primos',
   templateUrl: './primos.component.html',
   styleUrls: ['./primos.component.css']
 })
-export class PrimosComponent {
-  @Input() inicio: number = 0;
-  @Input() fin: number = 100;
+export class PrimosComponent implements OnInit{
+  @Input() inicio: number;
+  @Input() fin: number;
   numerosPrimos: number[] = [];
 
   constructor() {
+    this.inicio = 10;
+    this.fin = 15;
+  }
+
+  ngOnInit(): void {
     this.calcularNumerosPrimos();
   }
 
   calcularNumerosPrimos() {
+    this.numerosPrimos = [];
     for (let num = this.inicio; num <= this.fin; num++) {
       if (this.esPrimo(num)) {
         this.numerosPrimos.push(num);

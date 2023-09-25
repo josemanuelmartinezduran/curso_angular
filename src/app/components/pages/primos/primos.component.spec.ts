@@ -23,7 +23,7 @@ describe('PrimosComponent', () => {
     component.inicio = 1;
     component.fin = 10;
     component.calcularNumerosPrimos();
-    expect(component.numerosPrimos).toEqual([2, 5, 7]);
+    expect(component.numerosPrimos).toEqual([2, 3, 5, 7]);
   });
 
   it('debería calcular los números primos en el rango [20-30]', () => {
